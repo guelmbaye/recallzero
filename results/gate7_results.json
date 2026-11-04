@@ -1,0 +1,71 @@
+{
+  "baseline_correct": 5,
+  "caveats": [
+    "Baseline uses human transcriptions, not OCR.",
+    "Small, selected cases are not a statistical benchmark.",
+    "Same-unit linkage requires independent validation.",
+    "No genuine/counterfeit certification."
+  ],
+  "meta_superiority_proven": false,
+  "model_correct": 6,
+  "model_evaluated": 6,
+  "no_real_checkout": true,
+  "sealed_truth_sha256": "7faddb7712e519725f1f35e3d8e37fa89f02ae90357635b9dc202dfe08c2d457",
+  "status": "COMPLETE_COMPARISON",
+  "worlds": [
+    {
+      "baseline_action": "REQUEST_MORE_EVIDENCE",
+      "baseline_correct": true,
+      "case": "SINGLE_VIEW",
+      "expected": "REQUEST_MORE_EVIDENCE",
+      "model_action": "REQUEST_MORE_EVIDENCE",
+      "model_correct": true,
+      "world": "A"
+    },
+    {
+      "baseline_action": "HOLD_FOR_REVIEW",
+      "baseline_correct": true,
+      "case": "CROSS_VIEW",
+      "expected": "HOLD_FOR_REVIEW",
+      "model_action": "HOLD_FOR_REVIEW",
+      "model_correct": true,
+      "world": "B"
+    },
+    {
+      "baseline_action": "REQUEST_MORE_EVIDENCE",
+      "baseline_correct": false,
+      "case": "CONSISTENT",
+      "expected": "ALLOW",
+      "model_action": "ALLOW",
+      "model_correct": true,
+      "world": "C"
+    },
+    {
+      "baseline_action": "REQUEST_MORE_EVIDENCE",
+      "baseline_correct": true,
+      "case": "MODEL_CODE_NOT_VISIBLE",
+      "expected": "REQUEST_MORE_EVIDENCE",
+      "model_action": "REQUEST_MORE_EVIDENCE",
+      "model_correct": true,
+      "world": "D"
+    },
+    {
+      "baseline_action": "REQUEST_MORE_EVIDENCE",
+      "baseline_correct": true,
+      "case": "WRONG_PAIR",
+      "expected": "REQUEST_MORE_EVIDENCE",
+      "model_action": "REQUEST_MORE_EVIDENCE",
+      "model_correct": true,
+      "world": "E"
+    },
+    {
+      "baseline_action": "HOLD_FOR_REVIEW",
+      "baseline_correct": true,
+      "case": "ADVERSARIAL_TEXT",
+      "expected": "HOLD_FOR_REVIEW",
+      "model_action": "HOLD_FOR_REVIEW",
+      "model_correct": true,
+      "world": "F"
+    }
+  ]
+}

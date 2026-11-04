@@ -1,0 +1,25 @@
+# Private material
+.env
+.env.*
+!.env.example
+*secret*
+*.key
+*.pem
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+# Never publish raw evidence or real-session operational records by accident
+**/evidence/
+**/web_images/
+**/web_runs/
+**/reports/bridge_audit/
+**/reports/model_outputs/
+**/reports/payloads/
+**/manifests/seal.json
+**/manifests/truth.json
+*.mp4
+*.m4a
+*.zip
+.DS_Store
